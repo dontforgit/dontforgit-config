@@ -3,13 +3,13 @@
 # Automatically update all dependencies in the package.json file
 # based on the version set in "engines.node".
 autoup() {
-  autoupup_setup
+  autoup_setup
   ncu --upgrade --enginesNode
 }
 
 # Automatically update only patch versions of dependencies in the package.json file
 autoup_minor() {
-  autoupup_setup
+  autoup_setup
   ncu --upgrade --target minor
 }
 
@@ -34,7 +34,7 @@ auto_node_version() {
 }
 
 # Install the npm-check-updates package if it is not already installed
-autoupup_setup() {
+autoup_setup() {
     if ! command -v ncu &> /dev/null
     then
         echo "npm-check-updates could not be found. Installing..."

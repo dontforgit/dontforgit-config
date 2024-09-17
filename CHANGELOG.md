@@ -1,5 +1,5 @@
 ## 0.2.0
-- Add the script for automatically updating NPM dependencies
+- Add the scripts for automatically updating NPM dependencies
   - `autoup_minor` - Updates all dependencies to the latest minor version or patch version.
   - `autoup` - Updates all dependencies to the latest version.
 
