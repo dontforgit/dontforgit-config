@@ -13,6 +13,60 @@ autoup_minor() {
   ncu --upgrade --target minor
 }
 
+########################### GIT HELPERS ###########################
+
+# Aliases
+alias gl="git log --oneline --graph"
+
+# Create a new branch and set the origin
+#
+# Params:
+#   $1 - The name of the new branch
+# Example: new feat/new-feature
+new() {
+  git fetch --all
+  git pull
+  git checkout -b "$1"
+  git push
+  git branch -u origin/$1
+}
+
+# Check out a branch and pull the latest changes
+#
+# Params:
+#   $1 - The name of the branch to check out
+# Example: co main
+co() {
+  git reset --hard HEAD
+  git fetch --all
+  git checkout "$1"
+  git pull
+}
+
+# Check out a branch and then create a new branch off of it
+#
+# Params:
+#   $1 - The name of the branch to check out
+#   $2 - The name of the new branch
+# Example: con main feat/new-feature
+con() {
+  co "$1"
+  new "$2"
+}
+
+# Merge a branch into the current branch
+#
+# Params:
+#   $1 - The name of the branch to merge into the current branch
+#   $2 - The name of the current branch
+# Example: com main feat/new-feature
+#   This will merge the "main" branch into the "feat/new-feature" branch
+com() {
+  co "$1"
+  co "$2"
+  git merge "$1"
+}
+
 ########################### HELPER FUNCTIONS ###########################
 
 # Automatically set the Node version based on:
