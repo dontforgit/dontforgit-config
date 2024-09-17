@@ -1,4 +1,20 @@
+########################### NPM CONFIGURATION ###########################
+
+# Automatically update all dependencies in the package.json file
+# based on the version set in "engines.node".
+autoup() {
+  autoup_setup
+  ncu --upgrade --enginesNode
+}
+
+# Automatically update only patch versions of dependencies in the package.json file
+autoup_minor() {
+  autoup_setup
+  ncu --upgrade --target minor
+}
+
 ########################### HELPER FUNCTIONS ###########################
+
 # Automatically set the Node version based on:
 # 1. The .node-version file in the current directory
 # 2. The .nvmrc file in the current directory
@@ -15,6 +31,17 @@ auto_node_version() {
   if [ -n "$node_version" ]; then
     nvm use "$node_version"
   fi
+}
+
+# Install the npm-check-updates package if it is not already installed
+autoup_setup() {
+    if ! command -v ncu &> /dev/null
+    then
+        echo "npm-check-updates could not be found. Installing..."
+        npm install -g npm-check-updates
+    else
+        echo "npm-check-updates is already installed."
+    fi
 }
 
 ########################### ZSH HOOKS ###########################
