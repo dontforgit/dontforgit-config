@@ -1,3 +1,6 @@
+## 0.4.0
+- Add the sayresult helper function.
+
 ## 0.3.0
 - Add helper scripts to streamline git commands.
   - `gl` - Git log with pretty formatting.

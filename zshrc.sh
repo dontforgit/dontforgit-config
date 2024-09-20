@@ -98,6 +98,26 @@ autoup_setup() {
     fi
 }
 
+# Speak a random success phrase when your script completes
+sayresult() {
+    # Array of success phrases
+    phrases=(
+        "Porque es muy rapido"
+        "Task complete"
+        "Done!"
+        "Yep."
+        "Red leader standing by..."
+        "Cheers!"
+        "Pwn the noobs"
+    )
+
+    # Calculate random index based on the number of phrases
+    random_index=$(($RANDOM % ${#phrases[@]}))
+
+    # Speak a random success phrase
+    say -v Samantha "${phrases[$random_index]}" || say -v "Epic fail!"
+}
+
 ########################### ZSH HOOKS ###########################
 autoload -U add-zsh-hook
 load-node-version-from-package-json() {
