@@ -1,3 +1,13 @@
+## 0.5.0
+- Add scripts specific to the Dow Jones build process
+  - `djbuild` - Build a DJ Plugin or Theme
+  - `djxbuild` - Rebuild a DJ Plugin or Theme
+  - `djcob` - Check out a branch and build it
+  - `djcoxb` - Check out a branch and run a full rebuild
+- Add the Nuke scripts
+  - `nukejs` - Remove lock files and `node_modules`.
+  - `nukephp` - Remove lock files and `vendor`.
+
 ## 0.4.0
 - Add the sayresult helper function.
 
