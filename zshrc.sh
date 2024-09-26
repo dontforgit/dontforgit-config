@@ -17,6 +17,8 @@ autoup_minor() {
 
 # Aliases
 alias gl="git log --oneline --graph"
+alias nukejs="rm -rf yarn.lock package-lock.json node_modules && sayresult"
+alias nukephp="rm -rf composer.lock vendor && sayresult"
 
 # Create a new branch and set the origin
 #
@@ -125,3 +127,6 @@ load-node-version-from-package-json() {
 }
 add-zsh-hook chpwd load-node-version-from-package-json
 load-node-version-from-package-json
+
+########################### DJ SCRIPTS ###########################
+source ~/.zshrc-dj.sh
