@@ -130,3 +130,12 @@ load-node-version-from-package-json
 
 ########################### DJ SCRIPTS ###########################
 source ~/.zshrc-dj.sh
+
+########################### MISC CONFIGURATIONS ###########################
+# Bash auto-completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+# Start starship
+eval "$(starship init zsh)";

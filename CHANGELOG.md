@@ -1,3 +1,6 @@
+## 1.0.0
+- Add README.md file with setup instructions.
+
 ## 0.5.0
 - Add scripts specific to the Dow Jones build process
   - `djbuild` - Build a DJ Plugin or Theme
