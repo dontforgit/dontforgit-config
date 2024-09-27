@@ -45,6 +45,10 @@ echo 'source ~/dontforgit-config/zshrc.sh' >> ~/.zshrc
 - `djcob` - Check out a branch and build it
 - `djcoxb` - Check out a branch and run a full rebuild
 
+#### NewsGrid Specific Workflows
+- `ngbuild` - Build a NewsGrid Plugin or Theme
+- `ngxbuild` - Rebuild a NewsGrid Plugin or Theme
+
 ### Configurations
 - Autoload the `auto_node_version` function when a new terminal is opened.
 - Setup bash autocompletion
