@@ -1,3 +1,6 @@
+## 1.1.0
+- Adding NewsGrid scripts. 
+
 ## 1.0.0
 - Add README.md file with setup instructions.
 

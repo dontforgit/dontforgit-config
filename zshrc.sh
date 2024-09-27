@@ -130,6 +130,7 @@ load-node-version-from-package-json
 
 ########################### DJ SCRIPTS ###########################
 source ~/.zshrc-dj.sh
+source ~/.zshrc-ng.sh
 
 ########################### MISC CONFIGURATIONS ###########################
 # Bash auto-completion
