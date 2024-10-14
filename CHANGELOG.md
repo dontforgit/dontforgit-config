@@ -18,7 +18,7 @@
   - `nukephp` - Remove lock files and `vendor`.
 
 ## 0.4.0
-- Add the sayresult helper function.
+- Add the `sayresult` helper function.
 
 ## 0.3.0
 - Add helper scripts to streamline git commands.
