@@ -1,3 +1,6 @@
+## 1.1.1
+- Fix relative path of `zshrc-dj.sh` and `zshrc-ng.sh` scripts.
+
 ## 1.1.0
 - Adding NewsGrid scripts. 
 
@@ -15,7 +18,7 @@
   - `nukephp` - Remove lock files and `vendor`.
 
 ## 0.4.0
-- Add the sayresult helper function.
+- Add the `sayresult` helper function.
 
 ## 0.3.0
 - Add helper scripts to streamline git commands.

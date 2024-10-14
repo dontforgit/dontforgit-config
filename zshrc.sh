@@ -129,8 +129,8 @@ add-zsh-hook chpwd load-node-version-from-package-json
 load-node-version-from-package-json
 
 ########################### DJ SCRIPTS ###########################
-source ~/.zshrc-dj.sh
-source ~/.zshrc-ng.sh
+source ~/dontforgit-config/zshrc-dj.sh
+source ~/dontforgit-config/zshrc-ng.sh
 
 ########################### MISC CONFIGURATIONS ###########################
 # Bash auto-completion
