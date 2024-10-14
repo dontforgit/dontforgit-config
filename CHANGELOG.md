@@ -1,5 +1,5 @@
 ## 1.1.1
-- Fix relative path of DJ and NG scripts.
+- Fix relative path of `zshrc-dj.sh` and `zshrc-ng.sh` scripts.
 
 ## 1.1.0
 - Adding NewsGrid scripts. 
