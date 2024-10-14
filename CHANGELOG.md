@@ -1,3 +1,6 @@
+## 1.1.1
+- Fix relative path of DJ and NG scripts.
+
 ## 1.1.0
 - Adding NewsGrid scripts. 
 
